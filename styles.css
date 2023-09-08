@@ -4,6 +4,18 @@
 	box-sizing: border-box;
 	font-family: Comic Sans MS;
 }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Comic Sans MS;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(./bg.avif);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
 nav{
 	width: 100%;
 	position: sticky !important;
@@ -33,8 +45,8 @@ section{
 #home{
 	width: 100%;
 	height: 100vh;
-	background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(./bg.avif );
-	background-size: cover;
+	/* background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(./bg.avif );
+	background-size: cover; */
 	/* opacity: 0.4; */
 	background-position: center;
 	background-repeat: no-repeat;
@@ -42,11 +54,12 @@ section{
 	align-items: top;
 	color: white;
 	flex-direction: column;
+	background-color: rgba(65, 50, 113, 0.226);
 
 }
 #home p{
 	position: absolute;
-	top: 20%;
+	top: 25%;
 	font-size: 80px;
 	opacity: 0;
 	animation: text 3s ease-in-out;
@@ -54,18 +67,23 @@ section{
 
 #home p:nth-child(1){
 	animation-delay: 0s;
+	background: rgb(12, 12, 12);
 }
 #home p:nth-child(2){
 	animation-delay: 3s;
+	background: rgb(12, 12, 12);
 }
 #home p:nth-child(3){
 	animation-delay: 6s;
+	background: rgb(12, 12, 12);
 }
 #home p:nth-child(4){
 	animation-delay: 9s;
+	background: rgb(12, 12, 12);
 }
 #home p:nth-child(5){
 	animation-delay: 12s;
+	background: rgb(12, 12, 12);
 }
 @keyframes text{
 	50%{
@@ -91,8 +109,8 @@ section{
 #about{
 	width: 100%;
 	height: 100vh;
-	background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(./bg2.jpg);
-	background-size: cover;
+	/* background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(./bg2.jpg);
+	background-size: cover; */
 	padding-top: 10%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -100,6 +118,7 @@ section{
 	align-items: center;
 	color: white;
 	flex-direction: column;
+	background-color: rgba(42, 41, 38, 0.285);
 }
 .circle{
 	width: 400px;
@@ -107,7 +126,7 @@ section{
 	/* background: #ef93b81; */
 	border-radius: 50%;
 	position: relative;
-	box-shadow: 0px 5px 12px rgba(0, 0, 0, .7);
+	/* box-shadow: 0px 5px 12px rgba(0, 0, 0, .7); */
 	margin-bottom: 3%;
 	margin-top: 8%;
 	transition: 1s;
@@ -162,6 +181,7 @@ section{
 		margin-bottom: 3%;
 		margin-top: 8%;
 		transition: 1s;
+		background-color: rgba(140, 31, 134, 0.278);
 	}
 	.circle:hover img{
 		position: absolute;
@@ -196,8 +216,8 @@ section{
 .skills{
 	width: 100%;
 	height: 100vh;
-	background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(./bg3.jpg);
-	background-size: cover;
+	/* background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(./bg3.jpg);
+	background-size: cover; */
 	/* margin-top: 10%; */
 	background-position: center;
 	background-repeat: no-repeat;
@@ -208,18 +228,21 @@ section{
 }
 
 .text-center{
-	padding-top: 10%;
-	padding-left: 10%;
+	margin-top: 10%;
+	margin-left: 10%;
 }
 #skills .container{
 	margin-top: 6%;
 	margin-bottom: 6%;
+	margin-right: 6%;
+	background: rgba(40, 202, 83, 0.193);
+	background-size: contain;
 }
 #skills{
 	padding-top: 10%;
 	padding-left: 10%;
-	background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),  url(./bg3.jpg) no-repeat;
-	background-size: cover;
+	/* background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),  url(./bg3.jpg) no-repeat;
+	background-size: cover; */
 	color: white;
 	background-position: center;
 
@@ -250,10 +273,14 @@ label{
 /*CONTACT SECTION*/
 #contact{
 	padding-top: 7%;
-	background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),  url(./bg4.jpg) no-repeat;
-	background: url(./bg4.jpg) nod-repeat;
+	/* background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),  url(./bg4.jpg) no-repeat;
+	background: url(./bg4.jpg) nod-repeat; */
 	background-size: cover;
 	color: aliceblue;
+	background-color: rgba(169, 111, 169, 0.285);
+	margin-top: 6%;
+	margin-bottom: 6%;
+	margin-right: 50%;
 }
 
 #contact iframe{
@@ -302,20 +329,25 @@ label{
 .footer {
   min-height: 20vh;
   width: 100%;
-  background-color: black;
-  color: white;
+  /* background:  linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),  url(./bg5.jpg) no-repeat;
+  background-position: center; */
+  background-size: cover;
+  color: rgb(13, 12, 12);
   flex-direction: column;
   text-align: center;
   padding: 5rem;
+  background: rgba(41, 175, 182, 0.244);
 }
 .footer .footer-contact {
   padding: 20px;
+  /* background: rgb(12, 12, 12); */
 }
 .footer .footer-contact .footer-contact-heading {
   font-size: 2.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 10px;
+  
 }
 .footer .footer-contact .footer-contact-info {
   font-size: 1.4rem;
